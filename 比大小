@@ -1,0 +1,21 @@
+#include<stdio.h>   //较大数
+
+int Max(int x, int y)
+{
+	if (x > y)
+		return x;
+	else
+		return y;
+
+}
+int main() 
+{
+	int num1 = 0;
+	int num2 = 0;
+	printf("请输入两个数字：");
+	scanf("%d %d", &num1,&num2);
+	int max = Max(num1,num2);
+	printf("较大数字是：%d\n",max);
+
+	return 0;
+}
