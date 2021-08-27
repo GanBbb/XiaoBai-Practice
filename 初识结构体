@@ -1,0 +1,20 @@
+//结构体
+#include<stdio.h>
+
+struct Book
+{
+	char name[20];
+	int price;
+};
+
+int main()
+{
+	struct Book b1 = { "c语言程序设计",60 };
+	struct Book* pb = &b1;
+	printf("%s %d元\n", b1.name, b1.price);
+	printf("%s %d元\nn", pb->name, pb->price);
+	//.   结构图变量.成员
+	//->  结构体指针->成员
+
+	return 0;
+}
