@@ -1,0 +1,38 @@
+//小飞机
+#include<stdio.h>
+
+int main()
+{
+    printf("     **     \n");
+    printf("     **     \n");
+    printf("************\n");
+    printf("************\n");
+    printf("    *  *    \n");
+    printf("    *  *    \n");
+    
+    return 0;
+}
+
+//十进制转八进制/十六进制
+//八进制前显示前导0，十六进制数前显示前导0X
+#include<stdio.h>
+
+int main()
+{
+    int a=1234;
+    printf("0%o 0X%X",a,a);
+    
+    return 0;
+}
+
+//printf返回值
+#include<stdio.h>
+
+int main()
+{
+    int a=printf("Hello world!");
+    printf("\n");
+    printf("%d",a);
+    
+    return 0;
+}
