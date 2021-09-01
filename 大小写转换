@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main()
+{
+        char ch=0;
+         
+        while((ch=getchar())!=EOF) //第一个getchar函数从输入缓存区中读取字符
+        {
+            putchar(ch+32);//putchar将读取的一个字符输出
+            getchar();//第二个getchar函数从输入缓存区中读取\n
+            printf("\n");
+        }
+     
+        return 0;
+}  
+     
