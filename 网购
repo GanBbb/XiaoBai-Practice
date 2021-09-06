@@ -1,0 +1,38 @@
+//双十一/双十二打折
+#include<stdio.h>
+
+float wow(float x, int y, int z, int n)
+{
+    float ret = 0;
+    if (y == 11 && z == 11)
+    {
+        ret = x * 0.7;
+        if (n == 1)
+        {
+            ret -= 50;
+        }
+    }
+    if (y == 12 && z == 12)
+    {
+        ret = x * 0.8;
+        if (n == 1)
+        {
+            ret -= 50;
+        }
+    }
+    if (ret < 0)
+    {
+        ret = 0;
+    }
+    return ret;
+}
+
+int main()
+{
+    float price = 0;
+    int month, date, is;
+    scanf("%f%d%d%d", &price, &month, &date, &is);
+    float pay = wow(price, month, date, is);
+    printf("%.2f", pay);
+    return 0;
+}
